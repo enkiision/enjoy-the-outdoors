@@ -6921,19 +6921,19 @@ loadParks();
 //   ]
 
 
-//load the table I want to see this on html
-// let nationalParkTBody = document.querySelector("#nationalParkTBody");
+// // load the table I want to see this on html
+let nationalParkTBody = document.querySelector("#nationalParkTBody");
 
-// for (const park of nationalParksArray) {
-//   let tr = document.createElement("tr");
-//   nationalParkTBody.appendChild("tr");
+for (const park of nationalParksArray) {
+  let tr = document.createElement("tr");
+  nationalParkTBody.appendChild("tr");
 
-//   let td1 = document.createElement("td");
-//   td1.innerText = park.LocationName;
-//   tr.appendChild(td1);
+  let td1 = document.createElement("td");
+  td1.innerText = park.LocationName;
+  tr.appendChild(td1);
 
-// }
+}
 
-//   //loading the national parks dropdown still working on it 10AM
-//   const nationalParksDropdown = document.querySelector("#nationalParksDropdown");
+  //loading the national parks dropdown still working on it 10AM
+ // delete  me  const nationalParksDropdown = document.querySelector("#nationalParksDropdown");
   

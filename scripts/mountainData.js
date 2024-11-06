@@ -555,7 +555,8 @@ const mountain = [
     "Strenuous",
     "Moderate",
     "Moderate to Strenuous"
-  ];
+  ]; 
+//   This isn't showing up at all look into this after commiting
 
 //load friend group dropdown
 const mountainDropdown = document.querySelector("#mountainDropdown");
