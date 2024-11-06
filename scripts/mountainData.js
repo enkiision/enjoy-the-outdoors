@@ -528,3 +528,80 @@ const mountainsArray = [
         }
     }
 ]
+let mountainsTbody = document.querySelector("#mountainsTbody");
+
+function buildTableRow(mountaininfo) {
+    let tr = mountainsTbody.insertRow();
+
+    let td1 = tr.insertCell();
+    td1.innerText = mountaininfo.name
+
+    let td2 = tr.insertCell(); 
+    td2.innerText = mountaininfo.elevation 
+
+    let td3 = tr.insertCell();
+    td3.innerText = mountaininfo.effort 
+
+    let td4 = tr.insertCell()
+    td4.innerText = mountaininfo.desc
+}
+
+// console.log(mountainsTbody); //nothing showing in body on html yet, Inspect Console recognizes theres a companyTbody to be input
+// for (const mountain of mountainsArray) { // when you pass a variable > it becomes an argument which is website and information is a parameter. One is being copied into another (maybe being renamed) these aren't the same thing
+//   buildTableRow(mountain)
+// }
+
+const mountain = [
+    "Strenuous",
+    "Moderate",
+    "Moderate to Strenuous"
+  ];
+
+//load friend group dropdown
+const mountainDropdown = document.querySelector("#mountainDropdown");
+
+for (const mountain of mountainsArray) {
+  let option = document.createElement("option");
+  option.value = mountain.name;
+  option.innerText = mountain.name;
+  mountainDropdown.appendChild(option);
+}
+
+function filterBymountainName() {
+    let selectedMountainName = mountainDropdown.value;
+    let filteredMountainsArray = mountainsArray.filter((mountain)=> mountain.name = selectedMountainName)
+    mountainsTbody.innerHTML = "";
+
+    for (const mountain of filteredMountainsArray) {
+        let tr = mountainsTbody.insertRow();
+
+        let td1 = tr.insertCell();
+        td1.innerText = mountain.name
+    
+        let td2 = tr.insertCell(); 
+        td2.innerText = mountain.elevation 
+    
+        let td3 = tr.insertCell();
+        td3.innerText = mountain.effort 
+    
+        let td4 = tr.insertCell()
+        td4.innerText = mountain.desc
+    }
+}
+
+
+// console.log(mountainsTbody);
+// for (const website of mountainsWebsites ) {
+//     buildTableRow(website)
+// }
+
+// mountainsArray.forEach(mountain => {
+//     console.log(mountain.name); // Logs each mountain's name
+//     console.log(mountain.elevation); // Logs each mountain's elevation
+// });
+
+// for (let i = 0; i < mountainsArray.length; i++) {
+//     console.log(mountainsArray[i].name); // Logs each mountain's name
+// }
+
+
