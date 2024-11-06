@@ -8,7 +8,6 @@
 </head>
 <body class="container mt-4">
         <header></header>
-        <h1>National Parks</h1>
         <ul class="nav">
         <li class="nav-item" >
             <a class="nav-link active" target="_blank" aria-current="page" href="index.html">Homepage</a>
@@ -35,21 +34,35 @@
             <button type="button" id="detailsButton" onclick="showNationalParkDetails">Show Details</button>
           </form>
         </div> 
-          <div id="nationalParkDetailsDiv" class="card" style="width: 20rem; display:none">
-            <!-- img id="" src="images/" class="card-img-top" alt="logo" /> -->
-             <div class="card-body">
+        <div class="d-flex my-4">
+          <table class="table table-border-thick table-striped">
+            <thead>
+              <tr>
+                <th>Park Names</th>
+                <th>Addresses</th>
+                <th>States</th>
+                <th>Phone Numbers</th>
+                <th>Websites</th>
+              </tr>
+            </thead>
+            <tbody id="nationalParkTbody"></tbody>
+          </table>
+        </div>
+          <!-- <div id="nationalParkDetailsDiv" class="card" style="width: 20rem; display:none">
+           img id="" src="images/" class="card-img-top" alt="logo" /> -->
+             <!-- <div class="card-body">
               <h5 id="cardTitleHeading" class="card-title" > National Park Details</h5>
               <div class="card-text">
                 <p id="nationalParkIDdetails" ></p>
                 <p id="nationalParksDetailsParagraph" ></p>
               </div>
              </div>
-           </div>
+           </div> --> 
        
         <!-- We want the search for national park to start here-->
       </section>
     </main>
-    <script src="./scripts/nationalParkData.js"></script>   
+    <script src="./scripts/new_national_park_data.js"></script>   
 <footer>&copy; Enki Vision</footer>
 </body>
 </html>

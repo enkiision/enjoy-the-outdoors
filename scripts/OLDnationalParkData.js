@@ -6862,13 +6862,13 @@ function loadParks() {
     for (const park of nationalParksArray) {
     }
   }
-loadParks = nationalParks
+// loadParks = nationalParks
 
-  let nationalParks = [
-    {LocationID: "ABLI" , LocationName: "Abraham Lincoln Birthplace National Historical Park", State: "Kentucky"},
-    {LocationID: "ACAD" , LocationName: "Acadia National Park" , State: "Maine"},
-    {LocationID: "ADAM" , LocationName: "Adams National Historical Park" , State: "Massachusetts"}
-  ]
+//   let nationalParks = [
+//     {LocationID: "ABLI" , LocationName: "Abraham Lincoln Birthplace National Historical Park", State: "Kentucky"},
+//     {LocationID: "ACAD" , LocationName: "Acadia National Park" , State: "Maine"},
+//     {LocationID: "ADAM" , LocationName: "Adams National Historical Park" , State: "Massachusetts"}
+//   ]
   //html elements into variables
 const nationalParksDropdown = document.getElementById("nationalParksDropdown");
 const nationalParkDetailsDiv = document.getElementById("nationalParkDetailsDiv");
@@ -6903,7 +6903,7 @@ function showNationalParkDetails() {
       }
     }
 }
-loadParks();
+// loadParks();
 
 // these are just strings!  const LocationName = [
 //     "Abraham Lincoln Birthplace National Historical Park",

@@ -563,7 +563,7 @@ for (const mountain of mountainsArray) {
 
 function filterByMountainName() {
     let selectedMountainName = mountainDropdown.value;
-    let filteredMountainsArray = mountainsArray.filter((mountain)=> mountain.name = selectedMountainName)
+    let filteredMountainsArray = mountainsArray.filter((mountain)=> mountain.name == selectedMountainName)
     mountainsTbody.innerHTML = "";
 
     for (const mountain of filteredMountainsArray) {
