@@ -1,7 +1,7 @@
-"use strict";
+// "use strict";
 
-function loadMountains(params) {
-  for (const mountain of mountainsArray) {
-    console.log(mountain);
-  }
-}
+// function loadMountains(mountainsArray) {
+//   for (const mountain of mountainsArray) {
+//     console.log(mountain);
+//   }
+// }

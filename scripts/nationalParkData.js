@@ -6858,3 +6858,82 @@ const nationalParksArray = [
     }
     }
 ]
+function loadParks() {
+    for (const park of nationalParksArray) {
+    }
+  }
+loadParks = nationalParks
+
+  let nationalParks = [
+    {LocationID: "ABLI" , LocationName: "Abraham Lincoln Birthplace National Historical Park", State: "Kentucky"},
+    {LocationID: "ACAD" , LocationName: "Acadia National Park" , State: "Maine"},
+    {LocationID: "ADAM" , LocationName: "Adams National Historical Park" , State: "Massachusetts"}
+  ]
+  //html elements into variables
+const nationalParksDropdown = document.getElementById("nationalParksDropdown");
+const nationalParkDetailsDiv = document.getElementById("nationalParkDetailsDiv");
+const detailsButton = document.getElementById("detailsButton");
+//const logoImage = document.getElementByID("logoImage")
+const cardTitleHeading = document.getElementById("cardTitleHeading");
+const nationalParkIDdetails = document.getElementById ("nationalParkIDdetails");
+const nationalParksDetailsParagraph = document.getElementById("nationalParksDetailsParagraph")
+
+//create the functions to handle user events
+function loadParks() {
+    for (const park of parks) {
+        let option = document.createElement("option");
+        option.text = park.LocationName;
+        option.value = park.LocationID;
+        nationalParksDropdown.appendChild(option);
+    }
+}
+
+function showNationalParkDetails() {
+    const LocationID = nationalParksDropdown.value; //nationalParkIDdetails.value replace?
+    if (park.LocationID) {
+        nationalParkDetailsDiv.style.display = "block";       
+    } else {
+        nationalParkDetailsDiv.style.display = "none";
+    }
+
+    for (const park of parks) {
+        if(park.LocationID == LocationID) {
+            const details = "You selected the ${park.LocationName} ${park.LocationID} this is located in the state of ${park.State}";
+            nationalParksDetailsParagraph.innerText = details;
+      }
+    }
+}
+loadParks();
+
+// these are just strings!  const LocationName = [
+//     "Abraham Lincoln Birthplace National Historical Park",
+//     "Acadia National Park",
+//     "Adams National Historical Park",
+//     "African Burial Ground National Monument",
+//     "Alcatraz Island",
+//     "Aleutian World War II National Historic Area",
+//     "Allegheny Portage Railroad National Historic Site",
+//     "American Memorial Park",
+//     "Amistad National Recreation Area",
+//     "Andersonville National Historic Site",
+//     "Andrew Johnson National Historic Site",
+//     "Aniakchak National Monument & Preserve",
+//   ]
+
+
+//load the table I want to see this on html
+// let nationalParkTBody = document.querySelector("#nationalParkTBody");
+
+// for (const park of nationalParksArray) {
+//   let tr = document.createElement("tr");
+//   nationalParkTBody.appendChild("tr");
+
+//   let td1 = document.createElement("td");
+//   td1.innerText = park.LocationName;
+//   tr.appendChild(td1);
+
+// }
+
+//   //loading the national parks dropdown still working on it 10AM
+//   const nationalParksDropdown = document.querySelector("#nationalParksDropdown");
+  
