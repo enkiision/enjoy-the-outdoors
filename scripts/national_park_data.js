@@ -5916,7 +5916,7 @@ loadTableHelper()
 
 function filterByState() {
   let selectedState = statesDropdown.value;
-  let filteredParkName = nationalParksArray.filter((nParkName) => (nParkName.State == selectedState));
+  let filteredParkName = nationalParksArray.filter((park) => (park.State == selectedState));
   nationalParkTbody.innerHTML = "";
   for (const element of filteredParkName) {
     let tr = nationalParkTbody.insertRow();
@@ -5937,4 +5937,29 @@ function filterByState() {
     td5.innerText = element.Website;
   }
 }
+
+function filterByParkType() {
+  let selectedParkType = parkTypesDropdown.value;
+  let filteredParks = nationalParksArray.filter((park) => (park.ParkName.includes (selectedParkType) ));
+  nationalParkTbody.innerHTML = "";
+  for (const element of filteredParks) {
+    let tr = nationalParkTbody.insertRow();
+
+    let td1 = tr.insertCell();
+    td1.innerText = element.ParkName;
+
+    let td2 = tr.insertCell();
+    td2.innerText = element.Address + ", ZipCode: " + element.ZipCode;
+
+    let td3 = tr.insertCell();
+    td3.innerText = element.City + ", " + element.State;
+
+    let td4 = tr.insertCell();
+    td4.innerText = element.Phone;
+
+    let td5 = tr.insertCell();
+    td5.innerText = element.Website;
+  }
+}
+
 
