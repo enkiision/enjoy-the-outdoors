@@ -5783,7 +5783,7 @@ const nationalParksArray = [
   },
 ];
 //infor for dropdown this is nationalParksDropdown
-const States = [
+const states = [
   "Alabama",
   "Alaska",
   "Arizona",
@@ -5836,12 +5836,28 @@ const States = [
   "Wyoming",
 ];
 
+const parkTypes = [
+  "National Park",
+  "National Monument",
+  "Recreation Area",
+  "Scenic Trail",
+  "Battlefield",
+  "Historic",
+  "Memorial",
+  "Preserve",
+  "Island",
+  "River",
+  "Seashore",
+  "Trail",
+  "Parkway"
+]
+
 //load the states dropdown
 const nationalParksDropdown = document.querySelector("#nationalParksDropdown");
 let nationalParkTbody = document.querySelector("#nationalParkTbody");
 
 function populateOptions() {
-  for (const state of States) {
+  for (const state of states) {
     let option = document.createElement("option"); //Working Order
     option.value = state;
     option.innerText = state;
