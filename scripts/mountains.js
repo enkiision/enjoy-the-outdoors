@@ -550,6 +550,7 @@ function filterByMountainName() {
 
         let td1 = tr.insertCell();
         td1.innerText = mountain.name
+        
     
         let td2 = tr.insertCell(); 
         td2.innerText = mountain.elevation 

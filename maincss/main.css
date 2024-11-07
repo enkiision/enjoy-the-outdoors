@@ -6,19 +6,23 @@
 
 body {
     background-color: #e0f7fa; /* Light blue color */
-    
   }
   
 ul{
-    background-color: rgb(150, 147, 147);
-    font-style: italic
+    background-color: rgb(62, 62, 62);
+    font-style: italic;
 }
 
+a.nav-link.active {
+    color: beige;
+}
 
 table{
     border-color: rgb(91, 54, 126);
     background-color:rgb(135, 11, 11);
 }
+/* ^^^^^^^^ this is being overwitten by bootstrap look at a.navlink:active example*/ 
+/* when overriding bootstap utilize class name spaces replaced by periods */
 
 /* .bg-custom{
     background-image: url("/images/beaver\ dam\ image.avif");
