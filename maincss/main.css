@@ -1,0 +1,22 @@
+.card{
+    width: 18rem;
+}
+
+
+
+body {
+    background-color: #e0f7fa; /* Light blue color */
+    
+  }
+  
+ul{
+    background-color: rgb(150, 147, 147);
+    font-style: italic
+}
+
+
+table{
+    border-color: rgb(91, 54, 126);
+    background-color:rgb(135, 11, 11);
+}
+

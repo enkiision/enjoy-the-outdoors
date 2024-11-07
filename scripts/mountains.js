@@ -3,7 +3,7 @@ const mountainsArray = [
         name: "Mt. Washington",
         elevation: 6288,
         effort: "Strenuous",
-        img: "Washington-StoryImage_2.jpg",
+        img: "Washington-StoryImage_2.jpg", 
         desc: "Mt. Washington (6,288 feet) is the highest peak east of the Mississippi River and north of the Carolinas. The upper part of the mountain has a climate similar to that of northern Labrador and supports a variety of alpine flora and fauna.",
         coords: {
             lat: 44.270403,
@@ -530,27 +530,6 @@ const mountainsArray = [
 ]
 let mountainsTbody = document.querySelector("#mountainsTbody");
 
-// function buildTableRow(mountaininfo) {
-//     let tr = mountainsTbody.insertRow();
-
-//     let td1 = tr.insertCell();
-//     td1.innerText = mountaininfo.name
-
-//     let td2 = tr.insertCell(); 
-//     td2.innerText = mountaininfo.elevation 
-
-//     let td3 = tr.insertCell();
-//     td3.innerText = mountaininfo.effort 
-
-//     let td4 = tr.insertCell()
-//     td4.innerText = mountaininfo.desc
-// }
-
-// console.log(mountainsTbody); //nothing showing in body on html yet, Inspect Console recognizes theres a companyTbody to be input
-// for (const mountain of mountainsArray) { // when you pass a variable > it becomes an argument which is website and information is a parameter. One is being copied into another (maybe being renamed) these aren't the same thing
-//   buildTableRow(mountain)
-// }
-
 //load friend group dropdown
 const mountainDropdown = document.querySelector("#mountainDropdown");
 
@@ -583,4 +562,4 @@ function filterByMountainName() {
     }
 }
 
-
+//ask for help in adding images
