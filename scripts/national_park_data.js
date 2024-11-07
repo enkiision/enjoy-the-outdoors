@@ -5852,20 +5852,35 @@ const parkTypes = [
   "Parkway"
 ]
 
-//load the states dropdown
-const nationalParksDropdown = document.querySelector("#nationalParksDropdown");
 let nationalParkTbody = document.querySelector("#nationalParkTbody");
 
-function populateOptions() {
+//load the states dropdown
+const statesDropdown = document.querySelector("#statesDropdown");
+
+function populateStateOptions() {
   for (const state of states) {
     let option = document.createElement("option"); //Working Order
     option.value = state;
     option.innerText = state;
-    nationalParksDropdown.appendChild(option);
+    statesDropdown.appendChild(option);
   }
 }
 
- populateOptions()
+ populateStateOptions()
+
+//load the park type dropdown
+const parkTypesDropdown = document.querySelector("#parkTypesDropdown");
+
+function populateParkTypeOptions() {
+  for (const parkType of parkTypes) {
+    let option = document.createElement("option"); //Working Order
+    option.value = parkType;
+    option.innerText = parkType;
+    parkTypesDropdown.appendChild(option);
+  }
+}
+
+populateParkTypeOptions()
 
 //Table for National Parks
 // let nationalParkTbody = document.querySelector("#nationalParkTbody");
@@ -5900,7 +5915,7 @@ loadTableHelper()
 //this is working for the dropdown^^
 
 function filterByState() {
-  let selectedState = nationalParksDropdown.value;
+  let selectedState = statesDropdown.value;
   let filteredParkName = nationalParksArray.filter((nParkName) => (nParkName.State == selectedState));
   nationalParkTbody.innerHTML = "";
   for (const element of filteredParkName) {

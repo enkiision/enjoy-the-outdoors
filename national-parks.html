@@ -27,11 +27,13 @@
         <h3>National Parks</h3>
         <div class="d-flex my-4" class="container">
           <form action="table" class="mb-2">
-            <label class="form-label" for="nationalParksDropdown">Search National Parks</label>
-            <select class="form-select" id="nationalParksDropdown" onchange="filterByState()">
+            <label class="form-label" for="statesDropdown">Search By State</label>
+            <select class="form-select" id="statesDropdown" onchange="filterByState()">
               <option value="">Select...</option>
-              <!-- <option value="">By State</option>
-              <option value="">Park Type</option> -->
+            </select>
+            <label class="form-label" for="parkTypesDropdown">Search by Park Type</label>
+            <select class="form-select" id="parkTypesDropdown" onchange="filterByState()">
+              <option value="">Select...</option>
             </select>
             <!-- <button type="button" id="detailsButton" onclick="showNationalParkDetails">Show Details</button> -->
           </form>
