@@ -1,17 +1,41 @@
 .card{
     width: 18rem;
+} 
+/* ^^^^^^ not being applied */
+
+/* Container for the header image */
+/* Make sure the container for the image takes up the full width of the header */
+header .header-image {
+    width: 100% !important;  /* Ensure full width */
+    height: auto !important; /* Maintain aspect ratio */
 }
 
+/* Make the image span the full width of the container while maintaining its aspect ratio */
+header .header-image img {
+    width: 100% !important;  /* Make the image span the full width */
+    height: auto !important; /* Maintain the aspect ratio */
+    display: block !important; /* Remove extra space below the image */
+}
 
+h2{
+    font-style: oblique !important;
+    border :#305054 !important;
+    padding: 10px !important;
+}
+/* not being applied */
 
 body {
     background-color: #e0f7fa; /* Light blue color */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+
   
 ul{
     background-color: rgb(62, 62, 62);
     font-style: italic;
+    text-align: center;
 }
+/* not being applied */
 
 a.nav-link.active {
     color: beige;
@@ -28,4 +52,22 @@ table{
     background-image: url("/images/beaver\ dam\ image.avif");
     background-repeat: no-repeat;
 } */
+.uniform-size {
+    width: 100%;     /* Fixed width */
+    height: auto;     /* Set to auto to maintain the image's aspect ratio */
+    max-height: 300px; /* Set a max height if you want a limit */
+    object-fit: cover; /* Crop the image to fit without distortion */
+}
 
+
+div.custom-border {
+    border: 2px dashed #52939c !important;
+    padding: 10px !important;
+}
+/* not being applied */
+
+footer {
+    line-height: 40px;
+    display: flex;
+    justify-content: left;
+    }
