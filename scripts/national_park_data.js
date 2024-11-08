@@ -5901,7 +5901,7 @@ function getTableData(parks) {
     td4.innerText = parks.Phone;
 
     let td5 = tr.insertCell();
-    td5.innerText = parks.Website;
+    td5.innerText = parks.Visit;
 //   }
 }
 
@@ -5934,7 +5934,7 @@ function filterByState() {
     td4.innerText = element.Phone;
 
     let td5 = tr.insertCell();
-    td5.innerText = element.Website;
+    td5.innerText = element.Visit;
   }
 }
 
@@ -5958,7 +5958,7 @@ function filterByParkType() {
     td4.innerText = element.Phone;
 
     let td5 = tr.insertCell();
-    td5.innerText = element.Website;
+    td5.innerText = element.Visit;
   }
 }
 
